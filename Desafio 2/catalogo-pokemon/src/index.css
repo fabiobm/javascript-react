@@ -1,0 +1,53 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: none;
+    text-align: center;
+}
+
+table {
+    border-spacing: 15px;
+    border-radius: 10px;
+    background-color: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+tr {
+    color: #1d2e82;
+}
+
+button {
+    height: 25px;
+    width: 175px;
+    font-size: 0.85em;
+    font-weight: bold;
+    color: #1d2e82;
+}
+
+.paginas {
+    margin: 0 auto;
+}
+
+.pagina {
+    color: black;
+    width: 27px;
+    margin-right: 1%;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid buttonface;
+    border-radius: 2px;
+}
+
+.pagina.active {
+    background-color: #07C;
+    color: white;
+    border: 1px solid #07C;
+}
+
+.pagina:hover:not(.active) {
+    background-color: #ddd;
+    border: 1px solid #ddd;
+}

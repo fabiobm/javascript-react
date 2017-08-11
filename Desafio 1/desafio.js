@@ -1,5 +1,18 @@
 "use strict";
 
+// A função fatosVigentes() recebe uma array 2D facts contendo arrays de fatos
+// e uma array 2D schema contendo as cardinalidades de atributos. Ela devolve
+// uma array 2D contendo arrays de fatos vigentes.
+//
+// A função testa() recebe uma array 3D facts contendo arrays 2D de fatos, uma
+// array 3D schemas contendo arrays 2D de cardinalidades de atributos, uma
+// array 3D expected contendo arrays 2D de fatos representando resultados
+// esperados e o número total de testes. Ela testa a função fatosVigentes()
+// para cada teste representado por um elemento de facts, um de schemas e um
+// de expected e informa os resultados.
+//
+// O código foi testado no site https://jsfiddle.net
+
 
 function fatosVigentes(facts, schema) {
     var schemaObj = {};
@@ -124,4 +137,4 @@ var expectedResults = [
 ];
 
 
-testa(facts, schemas, expectedResults, expectedResults.length)
+testa(facts, schemas, expectedResults, expectedResults.length);
